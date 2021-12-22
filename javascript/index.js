@@ -8,8 +8,8 @@ $(function(){
         speed: 1000,
         loop: true,
         navigation: {
-          nextEl: ".sc_swiper .controls .next",
-          prevEl: ".sc_swiper .controls .prev",
+          nextEl: ".sc_swiper .next",
+          prevEl: ".sc_swiper .prev",
         },
       });
 
@@ -37,7 +37,7 @@ $(function(){
     intro.pause();
 
 
-    $('.sc_intro .btn_sc').click(function(e){
+    $('.sc_intro .btn_work').click(function(e){
         e.preventDefault();
         // $('.sc_intro').addClass('hide');
         // $('.sc_main').addClass('show');

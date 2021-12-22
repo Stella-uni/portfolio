@@ -15,7 +15,7 @@
 
 .sc_intro .content_box .desc {font-size: 20px;margin-bottom: 30px;}
 
-.sc_intro .content_box .btn_video {display:inline-block;color:#000;background: #fff;padding: 15px 30px;border-radius: 30px;}
+.sc_intro .btn_work {display:inline-block;color:#000;background: #fff;padding: 15px 30px;border-radius: 30px;position: absolute;left: 50%;bottom: 100px;transform: translateX(-50%);}
 
 .sc_intro .intro_bg {position: absolute;top: 0;left: 0;object-fit: cover;width:100%;height:100%;z-index: -10;}
 
@@ -58,12 +58,12 @@
 
 .sc_main .sc_swiper .content .main_bg {position: absolute;top: 0;left: 0;;width:100%;height: 100%;object-fit: cover;z-index: -10;}
 
-.sc_main .sc_swiper .controls {width: 100%;position: absolute;bottom: 100px;left: 0;display: flex;justify-content: space-between;z-index: 10;padding: 0 10vw;}
 
-.sc_main .sc_swiper .controls .btn {width: 26px;height: 15px;display: block;background-image: url(../images/arr_left.svg);background-position: center;background-repeat: no-repeat;background-size: cover;opacity: 0.5;transition: all 0.3s;}
+.sc_main .sc_swiper .btn {width: 26px;height: 15px;display: block;background-image: url(../images/arr_left.svg);background-position: center;background-repeat: no-repeat;background-size: cover;opacity: 0.5;transition: 0.3s;position: absolute;bottom: 100px;z-index: 30;}
 
-.sc_main .sc_swiper .controls .btn.prev:hover {opacity: 1;}
+.sc_main .sc_swiper .btn.prev:hover {opacity: 1;}
 
-.sc_main .sc_swiper .controls .btn.next {transform: rotate(180deg);}
+.sc_main .sc_swiper .btn.prev {left: 10vw;}
+.sc_main .sc_swiper .btn.next {transform: rotate(180deg);right: 10vw;}
 
-.sc_main .sc_swiper .controls .btn.next:hover {opacity: 1;}
+.sc_main .sc_swiper .btn.next:hover {opacity: 1;}
