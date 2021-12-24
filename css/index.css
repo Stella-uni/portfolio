@@ -22,7 +22,6 @@
 /* sc_swiper */
 
 .sc_main {width: 100vw;position: absolute;top:0;left:0;
-    /* transition: 0.5s; 뒤에 흰 배경 많이 생김 */
     overflow: hidden;z-index: -30;visibility: hidden;}
 
 .sc_main.show {visibility: visible;}
@@ -33,11 +32,7 @@
 
 .sc_main .sc_swiper .content .title {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 100%;text-align: center;}
 
-/* .sc_main .sc_swiper .swiper-slide-active .content .title {opacity:1;left: 50%;} */
-
-
-
-.sc_main .sc_swiper .content .btn_sc {position: absolute;left: 50%;bottom: 100px;transform: translate(-50%,100%);opacity: 0;transition: all 2.5s;}
+.sc_main .sc_swiper .content .btn_sc {position: absolute;left: 50%;bottom: 100px;transform: translate(-50%,100%);opacity: 0;transition: 2.5s;}
 
 .sc_main .sc_swiper .swiper-slide-active .content .btn_sc {opacity:1;transform: translate(-50%,0) scale(1);}
 
@@ -49,7 +44,7 @@
     position: absolute;
     bottom: 0;right: 0;left: 0;
     transform: scale(0);
-    transition: all 2.5s;
+    transition: 2.5s;
 }
 
 

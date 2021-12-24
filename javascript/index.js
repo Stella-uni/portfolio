@@ -39,8 +39,6 @@ $(function(){
 
     $('.sc_intro .btn_work').click(function(e){
         e.preventDefault();
-        // $('.sc_intro').addClass('hide');
-        // $('.sc_main').addClass('show');
         intro.restart();
     })
 
