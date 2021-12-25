@@ -1,0 +1,70 @@
+
+
+/* sc_intro */
+
+.sc_intro {position: absolute;top: 0;left: 0;width:100vw;height: 100vh;display:flex;flex-direction:column;justify-content: center;align-items: center;overflow: hidden;z-index:20;transition: 1s;}
+
+.sc_intro.hide {visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.sc_intro .content_box {text-align: center;line-height: 1;}
+
+.sc_intro .content_box .title {margin-bottom: 30px;}
+
+.sc_intro .content_box .desc {font-size: 20px;margin-bottom: 30px;}
+
+.sc_intro .btn_work {display:inline-block;color:#000;background: #fff;padding: 15px 30px;border-radius: 30px;position: absolute;left: 50%;bottom: 100px;transform: translateX(-50%);font-size: 16px;}
+
+.sc_intro .intro_bg {position: absolute;top: 0;left: 0;object-fit: cover;width:100%;height:100%;z-index: -10;}
+
+/* sc_swiper */
+
+.sc_main {width: 100vw;position: absolute;top:0;left:0;
+    overflow: hidden;z-index: -30;visibility: hidden;}
+
+.sc_main.show {visibility: visible;}
+
+.sc_main .sc_swiper {position: relative;}
+
+.sc_main .sc_swiper .content {width: 100%;height: 100vh;position: relative;overflow: hidden;}
+
+.sc_main .sc_swiper .content .title {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 100%;text-align: center;}
+
+.sc_main .sc_swiper .content .info_box {text-align: center;position: absolute;bottom: 20vh;left: 50%;transform: translate(-50%,-50%);transition: 0.3s;}
+
+.sc_main .sc_swiper .content .info_box p {opacity:0;transition: 0.5s;}
+
+.sc_main .sc_swiper .content .info_box.show p {opacity:1;}
+
+.sc_main .sc_swiper .content .btn_sc {position: absolute;left: 50%;bottom: 100px;transform: translate(-50%,100%);opacity: 0;transition: 2.5s;}
+
+.sc_main .sc_swiper .swiper-slide-active .content .btn_sc {opacity:1;transform: translate(-50%,0) scale(1);}
+
+.sc_main .sc_swiper .content .btn_sc::after {
+    content: "";
+    display: block;
+    background: #fff;
+    height: 1px;
+    position: absolute;
+    bottom: 0;right: 0;left: 0;
+    transform: scale(0);
+    transition: 2.5s;
+}
+
+
+.sc_main .sc_swiper .swiper-slide-active .content .btn_sc::after {transform: scale(1);}
+
+
+.sc_main .sc_swiper .content .main_bg {position: absolute;top: 0;left: 0;;width:100%;height: 100%;object-fit: cover;z-index: -10;}
+
+
+.sc_main .sc_swiper .btn {width: 26px;height: 15px;display: block;background-image: url(../images/arr_left.svg);background-position: center;background-repeat: no-repeat;background-size: cover;opacity: 0.5;transition: 0.3s;position: absolute;bottom: 100px;z-index: 30;}
+
+.sc_main .sc_swiper .btn.prev:hover {opacity: 1;}
+
+.sc_main .sc_swiper .btn.prev {left: 10vw;}
+.sc_main .sc_swiper .btn.next {transform: rotate(180deg);right: 10vw;}
+
+.sc_main .sc_swiper .btn.next:hover {opacity: 1;}
