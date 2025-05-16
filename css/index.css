@@ -98,6 +98,7 @@
 .sc_main .sc_swiper .content .info_box {
   text-align: center;
   font-size: 18px;
+  padding-inline: 10vw;
 }
 
 .sc_main .sc_swiper .content .btn_sc {
